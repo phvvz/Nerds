@@ -1,0 +1,31 @@
+# файл лежит в корне сайта
+root = true
+
+# для всех типов файлов
+[*]
+
+# кодировка файлов
+charset = utf-8
+
+#пробелы для отступов
+indent_style = space
+
+# отступ равен (indent_size = 2) 2 пробелам
+indent_size = 2
+
+#конец строки lf(MacOs, linux) или CRLF(Windows)
+end_of_line = lf
+
+# подрезать или нет концевые пробелы
+trim_trailing_whitespace = true
+
+#последняя строка
+insert_final_newline = true
+
+#исключения для конкретных файлов
+[*.{go,py,rb,php}]
+indent_size = 4
+
+#исключения для конкретных файлов
+[*.md]
+trim_trailing_whitespace = false
